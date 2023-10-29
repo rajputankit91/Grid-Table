@@ -162,7 +162,7 @@ tbody tr td{
   padding: 20px 0;
 }
 tr:hover{
-  background-color: gray;
+  background-color: rgb(185, 183, 183);
 }
 ul li{
   list-style: none;
