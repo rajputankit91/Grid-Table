@@ -53,14 +53,14 @@ export class TableView{
             `
                 <td>
                     <button class="edit-button">
-                        <i class="fa fa-pencil" style="font-size: 20px; color: blue;"></i>
+                        <i class="fa fa-pencil" style="font-size: 20px;"></i>
                     </button>
                     <button class="save-button" style = "display: none">
-                        <i class="fa fa-check" style="font-size: 20px; color: blue;"></i>
+                        <i class="fa fa-check" style="font-size: 20px;"></i>
                     </button>                       
                 </td>
                 <td>
-                    <i class="fa fa-trash-o  deleteRow" style="font-size: 20px; color: red;"></i>
+                    <i class="fa fa-trash-o  deleteRow" style="font-size: 20px;"></i>
                 </td>
             `;
             this.createDeleteIcon(tableBody,tableRow, index,gridData)                        
@@ -224,14 +224,14 @@ export class TableView{
         newRow.innerHTML +=`
             <td>
                 <button class="edit-button" style = "display: none">
-                    <i class="fa fa-pencil" style="font-size: 20px; color: blue;"></i>
+                    <i class="fa fa-pencil" style="font-size: 20px;"></i>
                 </button>
                 <button class="save-button" style = "display: block">
-                    <i class="fa fa-check" style="font-size: 20px; color: blue;"></i>
+                    <i class="fa fa-check" style="font-size: 20px;"></i>
                 </button>                       
             </td>
             <td>
-                <i class="fa fa-trash-o  deleteRow" style="font-size: 20px; color: red;"></i>
+                <i class="fa fa-trash-o  deleteRow" style="font-size: 20px;"></i>
             </td>
         `;
     }
@@ -259,8 +259,8 @@ export class TableView{
     
     generatePage(total_page) {
         this.total_page = total_page;
-        let prevButton = `<li><button class="prevButton" >Previous</button></li>`;
-        let nextButton = `<li><button class="nextButton">Next</button></li>`;
+        let prevButton = `<li><i class="fa fa-angle-double-left prevButton" style="font-size:24px"></i></li>`;
+        let nextButton = `<li><i class="fa fa-angle-double-right nextButton" style="font-size:24px"></i></li>`;
         let pageValue = '';
         for (let i = 1; i <= total_page; i++) {
             const activeClass = i === this.page_number ? "active" : "";

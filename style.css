@@ -96,7 +96,7 @@ button:focus-visible {
   }
 } */
 
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -211,4 +211,144 @@ ul li{
   background-color: #8385f4;
   color: white;
   cursor: pointer;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: auto;
+}
+
+.topBar{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgb(240,240,240);
+}
+
+button{
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.AddDetails{
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #0298cf;
+}
+input,select{
+  padding: 10px 20px;
+  margin: 0 10px;
+  outline: none;
+  border: 1px solid #0298cf;
+  border-radius: 6px;
+  color: #0298cf;
+}
+
+.AddDetails{
+  margin-left: 15rem;
+}
+
+input{
+  width: 40rem;
+}
+
+select{
+  padding: 5px 15px;
+  font-size: 18px;
+}
+
+::placeholder{
+  color: #0298cf;
+}
+
+.tableContainer{
+  height: 800px;
+  overflow: auto;
+}
+
+table{
+  width: 100%;
+  table-layout: fixed;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+thead th{
+  position: sticky;
+  top: 0;
+  background-color: #f6f9fc;
+  color: #8493a5;
+  font-size: 15px;
+}
+
+th,td{
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+  word-break: break-all;
+  text-align: center;
+}
+
+tbody tr td:nth-last-child(1) i{
+  background-color: #b72121;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+}
+
+tbody tr td:nth-last-child(2) i{
+  background-color: #0298cf;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:hover td{
+  color: #0298cf;
+  cursor: pointer;
+  background-color: #f6f9fc;
+}
+
+.pagination ul{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.pagination ul li{
+  list-style: none;
+  padding: 10px;
+  border: 2px solid #d5d0d0;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0298cf;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active{
+  font-size: 45px;
 }

@@ -39,7 +39,7 @@ export  class Model{
         ['Unity Butler', 'Marketing Designer', 'San Francisco', '5384', '2009/12/09', '$85,675'],
     ]
     this.columns = [
-        { title: "SrNo." },
+        { title: "Sr No." },
         { title: "Name" },
         { title: "Position" },
         { title: "Office" },
