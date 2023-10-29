@@ -2,12 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grid Table</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <div class="topBar header">
+        <label for="Records Per Page">Records Per Page
+          <select name="Records Per Page" id="record_size" style="max-width: 80px; height: 30px;">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+          </select>
+        </label>
+        <div class="searchContainer">
+          <label for="search">Search:
+            <input type="text" placeholder="Search">
+          </label>
+          <button class= 'AddDetails'>Add</button>
+        </div>
+      </div>
+    </div>
+    <div class="pagination"></div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
